@@ -18,16 +18,29 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+ background-color: black;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.wave-patterns{
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/chaosGradient.svg?alt=media&token=a7333aa9-f6ca-4d61-9b99-850a1213e736');
+  width: 100%;
+  height: auto;
+  /* object-fit: cover;
+  align-items: center; */
+  /* background-repeat: repeat; */
+ 
+
+  
 }
