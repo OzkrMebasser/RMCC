@@ -9,7 +9,6 @@ import "aos/dist/aos.css";
 import HeroSection from "./components/HeroSection";
 
 import AboutHomePage from "./components/AboutHomePage";
-import ImagesSliderContainer from "./components/UI/ImagesSliderContainer";
 
 
 
