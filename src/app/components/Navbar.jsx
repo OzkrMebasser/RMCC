@@ -1,6 +1,8 @@
+"use client"
 import React, { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import { IoMenuSharp, IoClose } from "react-icons/io5";
+import Link from "next/link"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 100) {
-        setIsLogoSmall(true);
-      } else {
-        setIsLogoSmall(false);
-      }
+      setIsLogoSmall(window.pageYOffset > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       className={`bg-[#fff] shadow-md mx-auto sticky top-0 z-20 transition-all duration-300 ${
-        isLogoSmall ? "h-16 bg-[#fff]"  : "h-32 bg-red-600"
+        isLogoSmall ? "h-16" : "h-32 bg-red-600"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 ">
@@ -34,7 +32,9 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center transition-all duration-300">
               <a href="/">
                 <img
-                  className={`block lg:hidden ${isLogoSmall ? "h-16" : "h-32"}`}
+                  className={`block lg:hidden ${
+                    isLogoSmall ? "h-16 transition-all duration-300" : "h-32 transition-all duration-300"
+                  }`}
                   src={
                     isLogoSmall
                       ? "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logoRMCCbgTrasnp.png?alt=media&token=982864e9-48c8-4713-801a-f97ff0ccb8b4"
@@ -43,7 +43,9 @@ const Navbar = () => {
                   alt="Mobile Logo"
                 />
                 <img
-                  className={`hidden lg:block ${isLogoSmall ? "h-16" : "h-32"}`}
+                  className={`hidden lg:block ${
+                    isLogoSmall ? "h-16 transition-all duration-300" : "h-32 transition-all duration-300"
+                  }`}
                   src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logoRMCCbgTrasnp.png?alt=media&token=982864e9-48c8-4713-801a-f97ff0ccb8b4"
                   alt="Desktop Logo"
                 />
@@ -59,18 +61,18 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex lg:items-center lg:ml-6">
             <div className="flex space-x-4">
-              <a
+              <Link
                 href="/"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Home
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                href="/about-us"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                About
-              </a>
+                About us
+              </Link>
               <a
                 href="/"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -119,18 +121,18 @@ const Navbar = () => {
         {(ref) => (
           <div className="lg:hidden" id="mobile-menu">
             <div className="px-4 pt-12 pb-3 space-y-8 sm:px-3 bg-red-600 h-[100vh]">
-              <a
+              <Link
                 href="/"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                href="/about-us"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                About
-              </a>
+                About us
+              </Link>
               <a
                 href="/"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"

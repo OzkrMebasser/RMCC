@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 // icons
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
-const About = () => {
+const AboutHomePage = () => {
   const router = useRouter();
 
   return (
@@ -41,7 +41,7 @@ const About = () => {
             data-aos-delay="700"
             // onClick={() => router.push(`about`)}
           >
-            <Link href="#"> Learn More </Link>
+            <Link href="/about-us"> Learn More </Link>
             <IoIosArrowDroprightCircle className="text-2xl inline ml-2 align-middle" />
           </button>
         </div>
@@ -50,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutHomePage;
