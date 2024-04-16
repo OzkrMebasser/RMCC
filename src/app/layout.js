@@ -14,7 +14,9 @@ export const metadata = {
   hope, where individuals are encouraged to cultivate a deeper
   relationship with God. We invite you to join us and experience the
   transformative power of faith and spiritual enrichment.`,
- 
+  icons: {
+    icon: "/iconRMCCbgTrasnp.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
  
       <body suppressHydrationWarning={true} className={inter.className}>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
+   
         <Navbar />
 
         {children}
