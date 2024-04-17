@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsLogoSmall(window.pageYOffset > 10);
+      setIsLogoSmall(window.pageYOffset > 500);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,18 +22,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-[#fff] shadow-md mx-auto sticky top-0 z-20 transition-all duration-300 ${
+      className={`bg-[#fff] shadow-md mx-auto sticky top-0 z-20  ${
         isLogoSmall ? "h-16" : "h-32 bg-red-600"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 ">
         <div className="flex justify-between h-30">
           <div className="flex">
-            <div className="flex-shrink-0 flex items-center transition-all duration-300">
+            <div className="flex-shrink-0 flex items-center ">
               <a href="/">
                 <img
                   className={`block lg:hidden ${
-                    isLogoSmall ? "h-16 transition-all duration-50" : "h-32 transition-all duration-300"
+                    isLogoSmall ? "h-16" : "h-32 "
                   }`}
                   src={
                     isLogoSmall
@@ -44,7 +44,7 @@ const Navbar = () => {
                 />
                 <img
                   className={`hidden lg:block ${
-                    isLogoSmall ? "h-16 transition-all duration-50" : "h-32 transition-all duration-300"
+                    isLogoSmall ? "h-16 " : "h-32 "
                   }`}
                   src={
                     isLogoSmall
@@ -101,10 +101,11 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <IoClose className="block h-10 w-10 text-red-600" aria-hidden="true" />
+                <IoClose  className="block h-10 w-10 text-red-600" aria-hidden="true" />
               ) : (
                 <IoMenuSharp
-                  className="block h-10 w-10 text-red-600"
+                 
+                  className={isLogoSmall ? "block h-10 w-10 text-red-600" : "block h-10 w-10 text-white"}
                   aria-hidden="true"
                 />
               )}
