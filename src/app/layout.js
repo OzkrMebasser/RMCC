@@ -15,7 +15,7 @@ export const metadata = {
   relationship with God. We invite you to join us and experience the
   transformative power of faith and spiritual enrichment.`,
   icons: {
-    icon: "/iconRMCCbgTrasnp.png",
+    icon: "/rmccLogos2BGremoved.png",
   
   },
 };

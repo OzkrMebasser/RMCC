@@ -33,20 +33,24 @@ const Navbar = () => {
               <a href="/">
                 <img
                   className={`block lg:hidden ${
-                    isLogoSmall ? "h-16 transition-all duration-300" : "h-32 transition-all duration-300"
+                    isLogoSmall ? "h-16 transition-all duration-50" : "h-32 transition-all duration-300"
                   }`}
                   src={
                     isLogoSmall
-                      ? "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logoRMCCbgTrasnp.png?alt=media&token=982864e9-48c8-4713-801a-f97ff0ccb8b4"
-                      : "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/RMCClogoBGtransp.png?alt=media&token=de9cccbe-76c6-4781-9b87-1c821597a164"
+                      ? "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/rmccLogos1.png?alt=media&token=8486cb49-9158-4e3b-9f4b-ce5997d99a0a"
+                      : "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/rmccLogos2BGremoved.png?alt=media&token=57977709-78b0-463d-bdfc-2189e546cae7"
                   }
                   alt="Mobile Logo"
                 />
                 <img
                   className={`hidden lg:block ${
-                    isLogoSmall ? "h-16 transition-all duration-300" : "h-32 transition-all duration-300"
+                    isLogoSmall ? "h-16 transition-all duration-50" : "h-32 transition-all duration-300"
                   }`}
-                  src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logoRMCCbgTrasnp.png?alt=media&token=982864e9-48c8-4713-801a-f97ff0ccb8b4"
+                  src={
+                    isLogoSmall
+                      ? "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/rmccLogos1.png?alt=media&token=8486cb49-9158-4e3b-9f4b-ce5997d99a0a"
+                      : "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/rmccLogos2BGremoved.png?alt=media&token=57977709-78b0-463d-bdfc-2189e546cae7"
+                  }
                   alt="Desktop Logo"
                 />
               </a>
