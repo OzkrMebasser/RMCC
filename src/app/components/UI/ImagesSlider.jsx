@@ -117,7 +117,7 @@ const ImagesSlider = ({
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
         <div
-          className={`absolute inset-0 bg-black/60 z-40 ${overlayClassName}`}
+          className={`absolute inset-0 bg-black/10 z-40 ${overlayClassName}`}
         />
       )}
 

@@ -22,12 +22,9 @@ const HeroSection = () => {
        
         </div>
         <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
+          {/*Church photos slider*/}
           <ImagesSliderContainer/>
-          {/* <img
-            className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl filter saturate-100"
-            src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/pastors.jpg?alt=media&token=6e8eb841-619c-4773-8e48-468a0b60b97b"
-            alt="pastors photo"
-          /> */}
+     
         </div>
       </div>
     </section>

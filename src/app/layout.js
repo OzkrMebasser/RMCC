@@ -16,6 +16,7 @@ export const metadata = {
   transformative power of faith and spiritual enrichment.`,
   icons: {
     icon: "/iconRMCCbgTrasnp.png",
+  
   },
 };
 

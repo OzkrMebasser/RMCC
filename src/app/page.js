@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import HeroSection from "./components/HeroSection";
 
 import AboutHomePage from "./components/AboutHomePage";
+import MisionVision from "./components/misionVision";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
  {/* <ImagesSliderContainer/> */}
     <HeroSection/>
     <AboutHomePage/>
+    <MisionVision/>
   
 
     </>

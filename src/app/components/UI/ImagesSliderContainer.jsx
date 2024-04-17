@@ -12,6 +12,10 @@ export default function ImagesSliderContainer() {
     "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages4.jpeg?alt=media&token=40c8611e-5839-45f7-b591-d1f66dc46789",
     "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages5.jpeg?alt=media&token=f6f8b7ea-9059-43c6-8941-103fd3cc04d6",
     "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages6.jpeg?alt=media&token=6c4e4dd5-2f26-425e-a0da-7907eb75e12c",
+    "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages7.jpeg?alt=media&token=05bfe597-b3a9-4e9e-9d69-e08e76bebe21",
+    "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages8.jpeg?alt=media&token=3703fb13-6a1f-4b04-8407-d8f34c51dd8c",
+    "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages9.jpeg?alt=media&token=50ec7e5a-ea11-4a3c-9e2f-9a914dc609e7",
+    "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages10.jpeg?alt=media&token=567adb52-3192-469d-82cb-b4e30e80f776"
     
   ];
   return (

@@ -122,12 +122,14 @@ const Navbar = () => {
           <div className="lg:hidden" id="mobile-menu">
             <div className="px-4 pt-12 pb-3 space-y-8 sm:px-3 bg-red-600 h-[100vh]">
               <Link
+              onClick={() => setIsOpen(!isOpen)}
                 href="/"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
               </Link>
               <Link
+              onClick={() => setIsOpen(!isOpen)}
                 href="/about-us"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
