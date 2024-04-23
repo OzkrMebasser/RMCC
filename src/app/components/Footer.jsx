@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaGooglePlusG } from "react-icons/fa";
-import { FaHandHoldingHeart } from "react-icons/fa6";
+import { FaHandHoldingHeart, FaLocationDot } from "react-icons/fa6";
+
 import { IoLogoYoutube } from "react-icons/io";
 
 const Footer = () => {
@@ -199,7 +200,8 @@ const Footer = () => {
           <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
             <h6 className="font-bold mb-2">Address </h6>
             <address className="not-italic mb-4 text-sm">
-              Mawugulu Road, Entebee, Uganda
+              <a href="https://maps.app.goo.gl/kTMw7ky6RohY9b5cA" target="_blank" rel="noopener noreferrer"> Mawugulu Road, Entebee, Uganda <FaLocationDot className="inline"/></a>
+             
             </address>
           </div>
 

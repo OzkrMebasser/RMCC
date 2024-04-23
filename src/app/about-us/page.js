@@ -46,12 +46,12 @@ const AboutUs = () => {
                 <p className="flex items-center text-teal-800 md:text-body-md mb-6 font-semibold text-lg text-justify">
                   Geoffrey and Babrah are passionate about serving the body of
                   Christ and carrying on the great commission. They realized
-                  that serving others is the best way to express God&apos;s love for
-                  mankind. All the reasons why he come on earth, died on the
-                  cross and resurrected waste serve mankind through redemption.
-                  They are committed to bring a story of hope to the church and
-                  wherever God would led them. They believe John 11:25 is the
-                  fountain of their faith.
+                  that serving others is the best way to express God's love for
+                  mankind. All the reasons he came on earth, died on the cross
+                  and resurrected was to serve mankind through redemption. They
+                  are committed to bring a story of hope to the church and
+                  wherever God would lead them. They believe that John 11:25 is
+                  the ultimate cause for their faith.
                 </p>
                 <p className="text-teal-700">
                   Babrah Ndiwalana Wanzama (Lead pastor) Geoffrey Ndiwalana
