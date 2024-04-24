@@ -46,7 +46,7 @@ const AboutUs = () => {
                 <p className="flex items-center text-teal-800 md:text-body-md mb-6 font-semibold text-lg text-justify">
                   Geoffrey and Babrah are passionate about serving the body of
                   Christ and carrying on the great commission. They realized
-                  that serving others is the best way to express God's love for
+                  that serving others is the best way to express God&apos;s love for
                   mankind. All the reasons he came on earth, died on the cross
                   and resurrected was to serve mankind through redemption. They
                   are committed to bring a story of hope to the church and
