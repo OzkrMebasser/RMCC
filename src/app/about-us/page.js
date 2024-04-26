@@ -71,7 +71,7 @@ const AboutUs = () => {
       </section>
 
       <section className="bg-teal-900">
-        {/* Youth pastor */}
+        {/* Youth Ministry */}
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center sm:flex-row-reverse">
           <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
             <img
@@ -87,20 +87,13 @@ const AboutUs = () => {
                 data-aos-delay="100"
                 className="uppercase text-2xl mb-4 font-bold leading-tight text-teal-200 sm:text-4xl text-center"
               >
-                Youth Pastor
+                Youth Ministry
               </h2>
               <div className="mt-8 space-y-5">
                 <p className="text-white md:text-body-md mb-6 font-semibold text-lg text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                To raise a generation of Christian youth empowered, to engage our community&apos;s youth in a relationship with God, to equip them to grow in their faith in Jesus Christ,  and to enjoy and share God&apos;s love.
                 </p>
-                <p className="text-teal-200">Wangubo paddy (Youth Pastor)</p>
+                {/* <p className="text-teal-200">Wangubo paddy (Youth Pastor)</p> */}
               </div>
             </div>
           </div>
@@ -117,7 +110,7 @@ const AboutUs = () => {
                 data-aos-delay="100"
                 className="uppercase text-2xl mb-4 font-bold leading-tight text-red-600 sm:text-4xl text-center"
               >
-                Resident Pastor
+                Children Minister
               </h2>
               <div className="mt-8 space-y-5">
                 <p className="flex items-center text-teal-300 md:text-body-md mb-6 font-semibold text-lg text-justify">

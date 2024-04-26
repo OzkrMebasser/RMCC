@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Cambia el estado de isLogoSmall dependiendo del scroll
-      setIsLogoSmall(window.pageYOffset > 500);
+      setIsLogoSmall(window.pageYOffset > 200);
     };
 
     window.addEventListener("scroll", handleScroll);
