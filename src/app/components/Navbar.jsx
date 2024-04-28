@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Cambia el estado de isLogoSmall dependiendo del scroll
-      setIsLogoSmall(window.pageYOffset > 200);
+      setIsLogoSmall(window.pageYOffset > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -55,8 +55,8 @@ const Navbar = () => {
                 isLogoSmall ? "sm:text-[1.5rem] text-red-600" : "sm:text-[1.8rem] text-white"
               }`}
             >
-              RESURRECTION MIRACLE CENTER
-              <span className="text-teal-400 ml-2">CHURCH</span>
+              RESURRECTION MIRACLE CENTER CHURCH
+              {/* <span className="text-teal-400 ml-2">CHURCH</span> */}
             </span>
           </div>
           <div className="hidden lg:flex lg:items-center lg:ml-6">
@@ -88,15 +88,15 @@ const Navbar = () => {
               >
                 Services
               </a>
-              <a
-                href="/"
+              <Link
+                href="/contact-us"
                 className={`transition-all duration-300 ${
                   isLogoSmall ? "text-red-600 hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   : "text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                 }`}
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex items-center lg:hidden">
@@ -158,12 +158,13 @@ const Navbar = () => {
               >
                 Services
               </a>
-              <a
-                href="/"
+              <Link
+               onClick={() => setIsOpen(!isOpen)}
+                href="/contact-us"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}

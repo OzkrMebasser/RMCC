@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Statements from "../components/Statements";
 
 const AboutUs = () => {
   return (
@@ -30,8 +31,21 @@ const AboutUs = () => {
           </p>
         </header>
       </section>
-      <section className="bg-white">
+    {/* Our History */}
+    <Statements
+    title="OUR HISTORY"
+    statement="After traversing the whole country on evangelical mission Preaching the message of forgiveness and repentance, love and hope with believing in Resurrection as a second life out of redemption,  a church had to be formed as a  focal point for spiritual reunion in the body of Christ."
+    parag1="Our first prayers in 2016 were held in the home of Pastor Babrah and Geoffrey. God’s mighty hand was manifested and we had to search for a big place the following year. We got the place and it’s where we are currently located."
+    parag2="God has managed to make our church   impactful in the community. It’s a place for  refugee for all that are tired and need to rest, those seeking  spiritual  empowerment and nutrition,  physical and moral support."
+    parag3="We are currently building a bigger sanctuary to accommodate the numbers,  and later projected to construct a resource center and an orphanage.
+    When you believe that Jesus is the Resurrection and life, even though you may die, you shall live.
+    And whoever lives and believes in me shall never die ."
+  
+  />
+      
         {/* Our lead pastors */}
+      <section className="bg-white">
+    
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
