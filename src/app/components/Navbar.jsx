@@ -12,8 +12,11 @@ const Navbar = () => {
   // Efecto para manejar el cambio de tamaño del logo al hacer scroll
   useEffect(() => {
     const handleScroll = () => {
-      // Cambia el estado de isLogoSmall dependiendo del scroll
-      setIsLogoSmall(window.pageYOffset > 50);
+      if (window.pageYOffset > 100) {
+        setIsLogoSmall(true);
+      } else {
+        setIsLogoSmall(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={` shadow-md mx-auto sticky top-0 z-20 transition-all duration-300 ${isLogoSmall ? "h-16  bg-white" : "h-32 bg-red-600"}`}
+      className={`fixed top-0 left-0 right-0 shadow-md mx-auto z-50 transition-all duration-300 ${isLogoSmall ? "h-16  bg-white" : "h-32 bg-red-600"}`}
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-30">
@@ -79,15 +82,15 @@ const Navbar = () => {
               >
                 About us
               </Link>
-              <a
-                href="/"
+              <Link
+                href="/ministries"
                 className={`transition-all duration-300 ${
                   isLogoSmall ? "text-red-600 hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   : "text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                 }`}
               >
-                Services
-              </a>
+                Ministries
+              </Link>
               <Link
                 href="/contact-us"
                 className={`transition-all duration-300 ${
@@ -152,12 +155,12 @@ const Navbar = () => {
               >
                 About us
               </Link>
-              <a
-                href="/"
+              <Link
+                href="/ministries"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300"
               >
-                Services
-              </a>
+                 Ministries
+              </Link>
               <Link
                onClick={() => setIsOpen(!isOpen)}
                 href="/contact-us"

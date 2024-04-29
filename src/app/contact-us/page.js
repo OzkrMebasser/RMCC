@@ -46,7 +46,7 @@ const ContactUs = () => {
   return (
     <>
       {/* Header section ABOUT US*/}
-      <section className=" wave-patterns object-fill py-[30px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
+      <section className=" mt-[6rem] wave-patterns object-fill py-[30px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
         <header>
           <h2
             data-aos="fade-down"
