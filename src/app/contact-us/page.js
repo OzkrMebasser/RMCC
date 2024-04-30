@@ -197,10 +197,12 @@ const ContactUs = () => {
         title="OUR LOCATION"
         // statement="A christian ministry meant to preach the living gospel of our Lord Jesus Christ to all the lost, bringing hope to the hopeless and everything that was dead back to life."
       />
-   {/* <LocationMap/> */}
+ 
    <Suspense fallback={<div className="text-black text-xl">Loading map ...</div>}>
         <LocationMap />
       </Suspense>
+
+
     </>
   );
 };
