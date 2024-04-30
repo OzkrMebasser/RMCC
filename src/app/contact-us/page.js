@@ -1,6 +1,11 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense  } from "react";
+import Statements from "../components/Statements";
+// import LocationMap from "../components/UI/LocationMap";
+
+
+const LocationMap = lazy(() => import('../components/UI/LocationMap'))
 
 const ContactUs = () => {
   const [firstName, setFirstName] = useState("");
@@ -46,7 +51,7 @@ const ContactUs = () => {
   return (
     <>
       {/* Header section ABOUT US*/}
-      <section className=" mt-[6rem] wave-patterns object-fill py-[30px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
+      <section className=" mt-[8.5rem] lg:mt-[6rem] wave-patterns object-fill py-[30px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
         <header>
           <h2
             data-aos="fade-down"
@@ -172,8 +177,8 @@ const ContactUs = () => {
         </div>
       </section>
       <section>
-        <h3></h3>
-        <div className=" inset-0 h-[450px] mt-4 mb-8 px-4 lg:px-12 bg-white ">
+        
+        {/* <div className=" inset-0 h-[450px] mt-4 mb-8 px-4 lg:px-12 bg-white ">
           <iframe
             width="100%"
             height="100%"
@@ -183,17 +188,21 @@ const ContactUs = () => {
             title="map"
             scroll="yes"
             src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Resurrection Miracle Center Church, Mawugulu Road&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-
           ></iframe>
-
-
-
-        </div>
+        </div> */}
+ 
+      
       </section>
+      <Statements
+        title="OUR LOCATION"
+        // statement="A christian ministry meant to preach the living gospel of our Lord Jesus Christ to all the lost, bringing hope to the hopeless and everything that was dead back to life."
+      />
+   {/* <LocationMap/> */}
+   <Suspense fallback={<div className="text-black text-xl">Loading map ...</div>}>
+        <LocationMap />
+      </Suspense>
     </>
   );
 };
 
 export default ContactUs;
-
-

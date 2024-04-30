@@ -156,6 +156,7 @@ const Navbar = () => {
                 About us
               </Link>
               <Link
+              onClick={() => setIsOpen(!isOpen)}
                 href="/ministries"
                 className="text-gray-300 hover:bg-teal-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300"
               >
