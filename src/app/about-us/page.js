@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Statements from "../components/Statements";
-import DescpImgSection from "../components/img&Desc/DescpImgSection";
+import DescpImgSection from "../components/img&Desc/LeftToRightDescpImgSection";
 import HistoryImages from "../components/UI/HistoryImages/HistoryImages";
 const AboutUs = () => {
   return (

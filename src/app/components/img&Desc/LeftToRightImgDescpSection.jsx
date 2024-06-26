@@ -1,5 +1,4 @@
 import React from "react";
-
 /**
  * This component represents an image with description section.
  * @param {Object} props - The props passed to the component.
@@ -16,12 +15,15 @@ import React from "react";
  * @param {string} props.dayAndTime - The day and time details as a string.
  * @returns {JSX.Element} - Returns a JSX element representing the image with description section.
  */
-const DescpImgSection = ({
+
+const LeftToRightImgDescpSection = ({
   bgSection,
   titleTextColor,
   descTextColor,
   subTitleTextColor,
   title,
+  subTitleTop,
+  subTitleTopTextColor,
   img,
   desc,
   subTitle,
@@ -32,7 +34,7 @@ const DescpImgSection = ({
   return (
     <>
       <section className={bgSection}>
-        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center sm:flex-row-reverse">
+        <div className="container flex flex-col px-6 py-10 mt-3 mx-auto space-y- lg:h-[32rem] lg:py-14 lg:flex-row lg:items-center sm:flex-row-reverse">
           <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
             <img
               data-aos="zoom-in"
@@ -43,29 +45,36 @@ const DescpImgSection = ({
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <div className="lg:ml-[120px]">
+            <div className="lg:ml-[40px]">
               <h2
                 data-aos="fade-down"
                 data-aos-delay="100"
-                className={`${titleTextColor} uppercase text-2xl mb-4 font-bold leading-tight sm:text-4xl text-center`}
+                className={`${titleTextColor} uppercase text-2xl mb-4 mt-8 font-bold leading-tight sm:text-4xl text-center lg:mt-2`}
               >
                 {title}
               </h2>
-              <div
-                className="mt-8 space-y-5"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+              <div className="mt-4 " data-aos="fade-up" data-aos-delay="100">
                 <p
-                  className={`${descTextColor} text-lg mb-4 font-semibold text-justify`}
+                  className={`${subTitleTopTextColor} mb-1 italic text-[1rem] font-semibold`}
+                >
+                  {" "}
+                  {subTitleTop ? <span>{subTitleTop} </span> : null}
+                </p>
+
+                <p
+                  className={`${descTextColor} mb-1 text-[1rem] font-semibold text-justify`}
                 >
                   {desc}
                 </p>
                 <p className={subTitleTextColor}>
-                  {subTitle ? <span >{subTitle} </span> : null}
-                  {subTitle2 ? (<><br /><span >{subTitle2} </span></>) : null}
+                  {subTitle ? <span>{subTitle} </span> : null}
+                  {subTitle2 ? (
+                    <>
+                      <br />
+                      <span>{subTitle2} </span>
+                    </>
+                  ) : null}
 
-                  
                   {servicesDays ? (
                     <>
                       {" "}
@@ -76,7 +85,7 @@ const DescpImgSection = ({
                     </>
                   ) : null}
                 </p>
-                <p  className={subTitleTextColor}>{dayAndTime}</p>
+                <p className={subTitleTextColor}>{dayAndTime}</p>
               </div>
             </div>
           </div>
@@ -86,7 +95,7 @@ const DescpImgSection = ({
   );
 };
 
-export default DescpImgSection;
+export default LeftToRightImgDescpSection;
 
 // const DescpImgSection = ({
 //   bgSection,
