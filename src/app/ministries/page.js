@@ -4,6 +4,22 @@ import Statements from "../components/Statements";
 import LeftToRightDescpImgSection from "../components/img&Desc/LeftToRightDescpImgSection";
 import LeftToRightImgDescpSection from "../components/img&Desc/LeftToRightImgDescpSection";
 
+
+
+const youthImages = [
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages2.jpeg?alt=media&token=6d903ac4-255b-4123-9c5a-1452b970d82e",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages3.jpeg?alt=media&token=1178c857-2caf-4a46-8f9f-eca1557dde72",
+];
+
+const womenImages = [
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages3.jpeg?alt=media&token=1178c857-2caf-4a46-8f9f-eca1557dde72",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages2.jpeg?alt=media&token=6d903ac4-255b-4123-9c5a-1452b970d82e",
+ 
+];
+
+
 const Ministries = () => {
   return (
     <>
@@ -75,6 +91,7 @@ const Ministries = () => {
         subTitleTextColor="text-red-700 "
         title="Youth Ministry"
         img="https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16"
+        images={youthImages}
         desc="To raise a generation of Christian youth empowered, to engage our community's youth in a relationship with God, to equip them to grow in their faith in Jesus Christ,  and to enjoy and share God's love"
         // subTitle=""
         servicesDays="Days of services:"
@@ -90,6 +107,7 @@ const Ministries = () => {
         img="https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16"
         desc="To raise a generation of Christian youth empowered, to engage our community's youth in a relationship with God, to equip them to grow in their faith in Jesus Christ,  and to enjoy and share God's love"
         // subTitle=""
+        images={womenImages}
         servicesDays="Days of services:"
         dayAndTime="Wednesday 7:00 PM"
       />

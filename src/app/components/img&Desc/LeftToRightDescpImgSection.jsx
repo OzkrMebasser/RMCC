@@ -1,6 +1,8 @@
 import React from "react";
 import MinistriesSlidesImgs from "../UI/ministriesSlidesImgs/MinistriesSlidesImgs";
 
+
+
 const LeftToRightDescpImgSection = ({
   bgSection,
   titleTextColor,
@@ -13,6 +15,7 @@ const LeftToRightDescpImgSection = ({
   subTitle2,
   servicesDays,
   dayAndTime,
+  images = []
 }) => {
   return (
     <>
@@ -61,8 +64,8 @@ const LeftToRightDescpImgSection = ({
             </div>
           </div>
           <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-            {/* Aquí reemplazamos la imagen con el componente MinistriesSlidesImgs */}
-            <MinistriesSlidesImgs />
+          
+            <MinistriesSlidesImgs images={images} />
           </div>
         </div>
       </section>

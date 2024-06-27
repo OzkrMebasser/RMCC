@@ -5,24 +5,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import './MinistriesSlidesImgs.css'
 
 // Import required modules
 import { Navigation } from 'swiper/modules';
 
-const fakeImages = [
-"https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16",
-    "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages2.jpeg?alt=media&token=6d903ac4-255b-4123-9c5a-1452b970d82e",
-    "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages3.jpeg?alt=media&token=1178c857-2caf-4a46-8f9f-eca1557dde72",
-];
+// const fakeImages = [
+// "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16",
+//     "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages2.jpeg?alt=media&token=6d903ac4-255b-4123-9c5a-1452b970d82e",
+//     "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages3.jpeg?alt=media&token=1178c857-2caf-4a46-8f9f-eca1557dde72",
+// ];
 
-export default function MinistriesSlidesImgs() {
+export default function MinistriesSlidesImgs({ images = [] }) {
+ 
+  if (!Array.isArray(images) || images.length === 0) {
+    return <p>No images available</p>; 
+  }
     return (
       <Swiper
         navigation={true}
         modules={[Navigation]}
         className="w-full h-full rounded-md mySwiper"
+        data-aos="zoom-in"
+        data-aos-delay="100"
       >
-        {fakeImages.map((image, index) => (
+        {images.map((image, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center">
             <img
               src={image}

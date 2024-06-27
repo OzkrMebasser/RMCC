@@ -1,0 +1,21 @@
+.swiper-button-prev{
+    color: rgb(240, 5, 5) !important;
+    animation: moveLeftRight 2s infinite;
+}
+
+.swiper-button-next{
+    color: rgb(240, 5, 5) !important;
+    animation: moveLeftRight 2s infinite;
+}
+
+@keyframes moveLeftRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
