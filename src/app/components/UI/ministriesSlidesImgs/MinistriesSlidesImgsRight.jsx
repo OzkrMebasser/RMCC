@@ -30,11 +30,12 @@ export default function MinistriesSlidesImgs({ images = [] }) {
         data-aos-delay="100"
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center">
+          <SwiperSlide key={index} className="">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="object-cover w-full h-full lg:h-auto lg:max-w-2xl mx-auto rounded-md filter saturate-100"
+              className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl filter saturate-100"
+              // className="object-cover w-full h-full lg:h-auto lg:max-w-2xl mx-auto rounded-md filter saturate-100"
             />
           </SwiperSlide>
         ))}

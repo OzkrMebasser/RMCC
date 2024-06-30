@@ -1,5 +1,5 @@
 import React from "react";
-import MinistriesSlidesImgs from "../UI/ministriesSlidesImgs/MinistriesSlidesImgs";
+import MinistriesSlidesImgs from "../UI/ministriesSlidesImgs/MinistriesSlidesImgsRight";
 
 
 
@@ -31,7 +31,7 @@ const LeftToRightDescpImgSection = ({
                 {title}
               </h2>
               <div
-                className="mt-8 space-y-5"
+                className="mt-4 "
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
@@ -63,7 +63,8 @@ const LeftToRightDescpImgSection = ({
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
+          <div className="flex items-center justify-center w-full h-full lg:w-1/2">
+          
           
             <MinistriesSlidesImgs images={images} />
           </div>

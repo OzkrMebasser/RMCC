@@ -1,4 +1,6 @@
 import React from "react";
+import MinistriesSlidesImgsLeft from "../UI/ministriesSlidesImgs/MinistriesSlidesImgsLeft";
+
 /**
  * This component represents an image with description section.
  * @param {Object} props - The props passed to the component.
@@ -25,6 +27,7 @@ const LeftToRightImgDescpSection = ({
   subTitleTop,
   subTitleTopTextColor,
   img,
+  images = [],
   desc,
   subTitle,
   subTitle2,
@@ -34,15 +37,16 @@ const LeftToRightImgDescpSection = ({
   return (
     <>
       <section className={bgSection}>
-        <div className="container flex flex-col px-6 py-10 mt-3 mx-auto space-y- lg:h-[32rem] lg:py-14 lg:flex-row lg:items-center sm:flex-row-reverse">
-          <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-            <img
+        <div className="container flex flex-col px-6 py-10  mx-auto space-y- lg:h-[32rem] lg:py-14 lg:flex-row lg:items-center sm:flex-row-reverse">
+          <div className="flex items-center justify-center w-full h-full lg:w-1/2">
+            {/* <img
               data-aos="zoom-in"
               data-aos-delay="100"
               className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl filter saturate-100"
               src={img}
               alt={title}
-            />
+            /> */}
+            <MinistriesSlidesImgsLeft images={images} />
           </div>
           <div className="w-full lg:w-1/2">
             <div className="lg:ml-[40px]">
