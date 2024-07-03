@@ -1,8 +1,19 @@
 "use client";
-import Link from "next/link";
+
 import Statements from "../components/Statements";
-import DescpImgSection from "../components/img&Desc/LeftToRightDescpImgSection";
+import ImagesDescriptions from "../components/img&Desc/ImagesDescriptions";
 import HistoryImages from "../components/UI/HistoryImages/HistoryImages";
+
+const pastorsImages = [
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC1.png?alt=media&token=675f80d8-cdd6-4654-b83d-8b23cf9f4ccb",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC2.png?alt=media&token=ecdb7f0f-51a5-4c54-9edb-019cd7908f31",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC3.png?alt=media&token=6852698c-8750-4b0f-a479-11426c23f65f",
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC4.png?alt=media&token=91c3f903-b00a-4e16-add7-fc47e5fb41af",
+];
+
+const img =
+  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC4.png?alt=media&token=91c3f903-b00a-4e16-add7-fc47e5fb41af";
+
 const AboutUs = () => {
   return (
     <>
@@ -36,28 +47,29 @@ const AboutUs = () => {
 
       {/* Our lead pastors */}
 
-      <DescpImgSection
+      <ImagesDescriptions
+        id="our-pastors"
         bgSection="bg-white"
         titleTextColor="text-red-600"
         descTextColor="text-teal-900"
         subTitleTextColor="text-teal-800 "
-        title="Our Pastors"
-        img="https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%20Pastors.jpeg?alt=media&token=d0c9ee69-1c67-43d2-a2b9-469156bd2dbc"
+        title={"Our Pastors"}
+        images={pastorsImages}
+        img={img}
         desc="Geoffrey and Babrah are passionate about serving the body of
-        Christ and carrying on the great commission. They realized
-        that serving others is the best way to express God's love
-        for mankind. All the reasons he came on earth, died on the
-        cross and resurrected was to serve mankind through redemption.
-        They are committed to bring a story of hope to the church and
-        wherever God would lead them. They believe that John 11:25 is
-        the ultimate cause for their faith."
+Christ and carrying on the great commission. They realized
+that serving others is the best way to express God's love
+for mankind. All the reasons he came on earth, died on the
+cross and resurrected was to serve mankind through redemption.
+They are committed to bring a story of hope to the church and
+wherever God would lead them. They believe that John 11:25 is
+the ultimate cause for their faith."
         subTitle="Babrah Ndiwalana Wanzama (Lead pastor)"
         subTitle2="Geoffrey Ndiwalana (Associate pastor)"
-        // servicesDays="Days of services:"
-        // dayAndTime="Geoffrey Ndiwalana (Associate pastor)"
       />
 
       <Statements
+      id="our-history"
         title="OUR HISTORY"
         statement="After traversing the whole country on evangelical mission preaching the message of forgiveness and repentance, love and hope with believing in Resurrection as a second life out of redemption,  a church had to be formed as a  focal point for spiritual reunion in the body of Christ."
         parag1="Our first prayers in 2016 were held in the home of Pastor Babrah and Geoffrey. God’s mighty hand was manifested and we had to search for a big place the following year. We got the place and it’s where we are currently located."
@@ -66,45 +78,7 @@ const AboutUs = () => {
         And whoever lives and believes in me shall never die."
       />
 
-      <HistoryImages/>
-
-      {/* <section className="bg-black">
-  
-        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-          <div className="w-full lg:w-1/2">
-            <div className="lg:max-w-lg">
-              <h2
-                data-aos="fade-down"
-                data-aos-delay="100"
-                className="uppercase text-2xl mb-4 font-bold leading-tight text-red-600 sm:text-4xl text-center"
-              >
-                Children Minister
-              </h2>
-              <div className="mt-8 space-y-5">
-                <p className="flex items-center text-teal-300 md:text-body-md mb-6 font-semibold text-lg text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                </p>
-
-                <p className="text-white">
-                  Days: <br />
-                  Wednesday 7:00 PM
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-            <img
-              className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl filter saturate-100"
-              src="https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16"
-              alt="pastors photo"
-            />
-          </div>
-        </div>
-      </section> */}
+      <HistoryImages />
     </>
   );
 };

@@ -19,6 +19,7 @@ import MinistriesSlidesImgsLeft from "../UI/ministriesSlidesImgs/MinistriesSlide
  */
 
 const LeftToRightImgDescpSection = ({
+  id,
   bgSection,
   titleTextColor,
   descTextColor,
@@ -36,16 +37,10 @@ const LeftToRightImgDescpSection = ({
 }) => {
   return (
     <>
-      <section className={bgSection}>
-        <div className="container flex flex-col px-6 py-10  mx-auto space-y- lg:h-[32rem] lg:py-14 lg:flex-row lg:items-center sm:flex-row-reverse">
-          <div className="flex items-center justify-center w-full h-full lg:w-1/2">
-            {/* <img
-              data-aos="zoom-in"
-              data-aos-delay="100"
-              className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl filter saturate-100"
-              src={img}
-              alt={title}
-            /> */}
+      <section className={bgSection} id={id}>
+        <div className="container flex flex-col px-6 py-10  mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center sm:flex-row-reverse ">
+          <div className="flex items-center justify-center w-full h-full lg:w-1/2 ">
+          
             <MinistriesSlidesImgsLeft images={images} />
           </div>
           <div className="w-full lg:w-1/2">
@@ -57,7 +52,7 @@ const LeftToRightImgDescpSection = ({
               >
                 {title}
               </h2>
-              <div className="mt-4 " data-aos="fade-up" data-aos-delay="100">
+              <div className="mt-4" data-aos="fade-up" data-aos-delay="100">
                 <p
                   className={`${subTitleTopTextColor} mb-1 italic text-[1rem] font-semibold`}
                 >
@@ -100,56 +95,3 @@ const LeftToRightImgDescpSection = ({
 };
 
 export default LeftToRightImgDescpSection;
-
-// const DescpImgSection = ({
-//   bgSection,
-//   titleTextColor,
-//   descTextColor,
-//   subTitleTextColor,
-//   title,
-//   img,
-//   desc,
-//   subTitle,
-//   servicesDays,
-//   dayAndTime,
-// }) => {
-//   return (
-//     <>
-//        <section className="bg-teal-900">
-//         {/* Youth Ministry */}
-//         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center sm:flex-row-reverse">
-//           <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-//             <img
-//               className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl filter saturate-100"
-//               alt="youth ministries"
-//             />
-//           </div>
-//           <div className="w-full lg:w-1/2">
-//             <div className="lg:ml-[120px]">
-//               <h2
-//                 data-aos="fade-down"
-//                 data-aos-delay="100"
-//                 className="uppercase text-2xl mb-4 font-bold leading-tight text-teal-200 sm:text-4xl text-center"
-//               >
-//                 Youth Ministry
-//               </h2>
-//               <div className="mt-8 space-y-5">
-//                 <p className="text-white md:text-body-md mb-6 font-semibold text-lg text-justify">
-//                 To raise a generation of Christian youth empowered, to engage our community&apos;s youth in a relationship with God, to equip them to grow in their faith in Jesus Christ,  and to enjoy and share God&apos;s love.
-//                 </p>
-//                 <p className="text-teal-200">
-//                  <strong> Days of services:</strong> <br/>
-//                 <span className="text-lg">  Wednesday 7:00 PM </span>
-//                 </p>
-//                 <p></p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//     </>
-//   );
-// };
-
-// export default DescpImgSection;

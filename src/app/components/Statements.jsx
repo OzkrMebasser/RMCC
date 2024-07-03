@@ -1,12 +1,13 @@
 import React from "react";
 
-const Statements = ({ title, statement, parag1, parag2, parag3 }) => {
+const Statements = ({ title, statement, parag1, parag2, parag3, id }) => {
   return (
     <>
-      <div className="bg-gradient-to-r from-[#5B0B5F] via-purple-700 to-slate-100 h-24 uppercase">
+      <div   id={id} className="bg-gradient-to-r from-[#5B0B5F] via-purple-700 to-slate-100 h-24 uppercase">
         <div className="px-6 py-8 container mx-auto  lg:px-6">
           <h2
             className=" font-black text-slate-100 text-2xl "
+          
             data-aos="fade-right"
             data-aos-delay="100"
           >

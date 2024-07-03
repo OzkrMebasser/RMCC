@@ -1,9 +1,9 @@
 import React from "react";
-import MinistriesSlidesImgsRight from "../UI/ministriesSlidesImgs/MinistriesSlidesImgsRight";
+import OurPastorsSlidesImgs from "../UI/ministriesSlidesImgs/OurPastorsSlidesImgs";
 
 
 
-const LeftToRightDescpImgSection = ({
+const OurPastors = ({
   id,
   bgSection,
   titleTextColor,
@@ -21,7 +21,7 @@ const LeftToRightDescpImgSection = ({
   return (
     <>
       <section className={bgSection} id={id}>
-        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6  lg:flex-row lg:items-center">
           
           <div className="w-full lg:w-1/2 ">
             <div className="lg:mr-[40px]">
@@ -66,7 +66,7 @@ const LeftToRightDescpImgSection = ({
             </div>
           </div>
           {/* <div className="flex items-center justify-center w-full h-full lg:w-1/2 "> */}
-          <div className="flex items-center justify-center w-full h-full lg:w-1/2">
+          <div className="flex items-center justify-center w-full lg:w-1/2">
           
           {/* <img
               data-aos="zoom-in"
@@ -76,11 +76,8 @@ const LeftToRightDescpImgSection = ({
               alt={title}           /> */}
             {/* <MinistriesSlidesImgsRight images={images} /> */}
 
-            {images && images.length > 0 ? (
-            <MinistriesSlidesImgsRight images={images}/>
-          ) : (
-            <img src={img} alt="Image" className="object-cover w-full h-full" />
-          )}
+            <OurPastorsSlidesImgs images={images} />
+       
           </div>
         </div>
       </section>
@@ -88,7 +85,7 @@ const LeftToRightDescpImgSection = ({
   );
 };
 
-export default LeftToRightDescpImgSection;
+export default OurPastors;
 
 
 // import React from "react";
