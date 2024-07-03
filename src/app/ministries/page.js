@@ -1,8 +1,7 @@
 "use client";
-import Link from "next/link";
+
 import ImagesDescriptions from "../components/img&Desc/ImagesDescriptions";
-import LeftToRightDescpImgSection from "../components/img&Desc/LeftToRightDescpImgSection";
-import LeftToRightImgDescpSection from "../components/img&Desc/LeftToRightImgDescpSection";
+
 
 const childrenImages = [
   "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/ministriesImages%2FchildrenMinistry1.jpeg?alt=media&token=4dd06bc8-5660-4a50-8fa1-b11cfa80feb1",
@@ -82,9 +81,9 @@ const Ministries = () => {
          school packages, children food ratios and groceries. We have impacted the community
          children and more have come to Jesus. That’s why we are known as a children church in
          the community.`}
-        // subTitle=""
-        servicesDays="Days of services:"
-        dayAndTime="Wednesday 7:00 PM"
+        subTitle="Days of services: "
+        subTitle2="Wednesday 7:00 PM"
+       
       />
       {/*Youth Ministries*/}
       <ImagesDescriptions
@@ -96,10 +95,9 @@ const Ministries = () => {
         title="Youth Ministry"
         img="https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/heroSection%2FrmccImages%201.jpeg?alt=media&token=4d257150-7491-41c9-b775-fa7ddc951b16"
         images={youthImages}
-        desc="To raise a generation of Christian youth empowered, to engage our community's youth in a relationship with God, to equip them to grow in their faith in Jesus Christ,  and to enjoy and share God's love"
-        // subTitle=""
-        servicesDays="Days of services:"
-        dayAndTime="Wednesday 7:00 PM"
+        desc={`To raise a generation of Christian youth empowered by the transformative love of God, fostering deep connections and spiritual resilience. We aim to engage our community's youth in a vibrant relationship with God, providing them with the tools and support to cultivate a thriving faith in Jesus Christ. Our mission extends to nurturing an environment where they not only experience but also joyfully share God's boundless love, impacting lives and spreading hope throughout our community and beyond.`}
+        subTitle="Days of services: "
+        subTitle2="Wednesday 7:00 PM"
       />
 
       <ImagesDescriptions
@@ -113,8 +111,8 @@ const Ministries = () => {
         desc="To raise and empower a generation of women ready to serve the Lord and participating in the spread of the gospel; To lead women through biblical principles of love, faith and integrity. Some of the activities are, Prayers everyday, Women's conferences in March and October, Young adults retreat, Women's dinner, Weekly door-to-door evangelism every Saturday, and Women small groups "
         // subTitle=""
         images={womenImages}
-        servicesDays="Days of services:"
-        dayAndTime="Wednesday 7:00 PM"
+        subTitle="Days of services: "
+        subTitle2="Wednesday 7:00 PM"
       />
     </>
   );
