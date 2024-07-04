@@ -69,7 +69,7 @@ the ultimate cause for their faith."
       />
 
       <Statements
-      id="our-history"
+        id="our-history"
         title="OUR HISTORY"
         statement="After traversing the whole country on evangelical mission preaching the message of forgiveness and repentance, love and hope with believing in Resurrection as a second life out of redemption,  a church had to be formed as a  focal point for spiritual reunion in the body of Christ."
         parag1="Our first prayers in 2016 were held in the home of Pastor Babrah and Geoffrey. God’s mighty hand was manifested and we had to search for a big place the following year. We got the place and it’s where we are currently located."

@@ -9,6 +9,7 @@ import HeroSection from "./components/HeroSection";
 
 import AboutHomePage from "./components/AboutHomePage";
 import MisionVision from "./components/MisionVision";
+import OurValues from "./components/OurValues"
 
 export default function Home() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <AboutHomePage />
       <MisionVision />
+      <OurValues/>
     </>
   );
 }

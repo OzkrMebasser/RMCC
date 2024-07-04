@@ -4,6 +4,7 @@ import React, { useState, lazy, Suspense  } from "react";
 import Statements from "../components/Statements";
 // import LocationMap from "../components/UI/LocationMap";
 
+const id = "location"
 
 const LocationMap = lazy(() => import('../components/UI/LocationMap'))
 
@@ -51,7 +52,7 @@ const ContactUs = () => {
   return (
     <>
       {/* Header section ABOUT US*/}
-      <section className=" mt-[8.5rem] lg:mt-[6rem] wave-patterns object-fill py-[30px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
+      <section id="contact-form" className=" mt-[8.5rem] lg:mt-[6rem] wave-patterns object-fill py-[30px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
         <header>
           <h2
             data-aos="fade-down"
@@ -71,7 +72,7 @@ const ContactUs = () => {
             <span className="block mt-4">
               {" "}
               our phone number is 955 222 666 99
-            </span>
+            </span >
           </p>
         </header>
         <div className="max-w-screen-md mx-auto p-5">
@@ -192,14 +193,15 @@ const ContactUs = () => {
         </div> */}
  
       
-      </section>
+      </section >
       <Statements
         title="OUR LOCATION"
+        id="location"
         // statement="A christian ministry meant to preach the living gospel of our Lord Jesus Christ to all the lost, bringing hope to the hopeless and everything that was dead back to life."
       />
  
    <Suspense fallback={<div className="text-black text-xl">Loading map ...</div>}>
-        <LocationMap />
+        <LocationMap/>
       </Suspense>
 
 

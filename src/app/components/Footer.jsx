@@ -67,24 +67,24 @@ const Footer = () => {
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/4 mt-8 md:mt-0">
             <h5 className="text-xl font-bold mb-6 text-teal-500 uppercase text-shadow">
-              About
+              Contact Us
             </h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-teal-600 hover:text-teal-600"
+                <Link 
+                  href="/contact-us#contact-form"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
-                  Team
-                </a>
+                  Write us a message!
+                </Link>
               </li>
               <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-teal-600 hover:text-teal-600"
+              <Link
+                  href="/contact-us#location"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
-                  Locations
-                </a>
+                  Do you want to visit us?, Here we are!
+                </Link>
               </li>
               <li className="mb-2">
                 <a
@@ -110,7 +110,7 @@ const Footer = () => {
               Stay connected
             </h5>
             <div className="flex sm:justify-center xl:justify-start mx-auto">
-              <a href="">
+              <a href="https://www.facebook.com/profile.php?id=61560591941252">
                 <FaFacebook className="w-8 h-8 " />
               </a>
               <a href="">
