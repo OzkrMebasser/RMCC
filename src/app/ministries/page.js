@@ -82,7 +82,7 @@ const Ministries = () => {
          children and more have come to Jesus. That’s why we are known as a children church in
          the community.`}
         subTitle="Days of services: "
-        subTitle2="Wednesday 7:00 PM"
+        subTitle2="Thursday 4:00 PM to 7:00 PM"
        
       />
       {/*Youth Ministries*/}
@@ -97,7 +97,7 @@ const Ministries = () => {
         images={youthImages}
         desc={`To raise a generation of Christian youth empowered by the transformative love of God, fostering deep connections and spiritual resilience. We aim to engage our community's youth in a vibrant relationship with God, providing them with the tools and support to cultivate a thriving faith in Jesus Christ. Our mission extends to nurturing an environment where they not only experience but also joyfully share God's boundless love, impacting lives and spreading hope throughout our community and beyond.`}
         subTitle="Days of services: "
-        subTitle2="Wednesday 7:00 PM"
+        subTitle2="Wednesday 4:00 PM to 7:00 PM"
       />
 
       <ImagesDescriptions
@@ -112,7 +112,7 @@ const Ministries = () => {
         // subTitle=""
         images={womenImages}
         subTitle="Days of services: "
-        subTitle2="Wednesday 7:00 PM"
+        subTitle2="Thursday 4:00 PM to 7:00 PM"
       />
     </>
   );

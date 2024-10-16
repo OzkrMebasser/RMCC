@@ -22,11 +22,11 @@ body {
  background-color: black;
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
-    text-wrap: balance;
+    -webkit-text-wrap: balance;
   }
-}
+} */
 
 .wave-patterns{
   background-image: url('https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/chaosGradient.svg?alt=media&token=a7333aa9-f6ca-4d61-9b99-850a1213e736');

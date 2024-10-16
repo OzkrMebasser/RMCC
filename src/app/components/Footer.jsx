@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaGooglePlusG } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { FaHandHoldingHeart, FaLocationDot } from "react-icons/fa6";
 import { BsMailbox2Flag } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
@@ -20,11 +20,15 @@ const Footer = () => {
     )}&body=${encodeURIComponent(body)}`;
 
     return (
-      <div>
-        <a href={mailtoLink}>
+
+        <a href={mailtoLink}
+        className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
           Email Us <FaEnvelope className="inline mr-2 mb-[.23rem]" />
         </a>
-      </div>
+     
     );
   };
 
@@ -129,14 +133,9 @@ const Footer = () => {
               </li>
 
               <li className="mb-2">
-                <a
-                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href=""
-                >
+             
                   <ContactLinkeEmail />
-                </a>
+             
               </li>
               <li className="mb-2">
                 <a
@@ -177,7 +176,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span className="mb-[.4rem] italic relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-                Adress:
+                Address:
               </span>{" "}
               Magulu Road
               <FaLocationDot className="inline ml-1  mb-[.23rem]" />
@@ -198,11 +197,12 @@ const Footer = () => {
               </a>
               <a href="">
                 {" "}
-                <FaTwitter className="w-8 h-8 ml-6" />
+                <FaTiktok className="w-8 h-8 ml-6" />
               </a>
-              <a href="">
+              <a href="https://chat.whatsapp.com/GlglUcLCvrm4F2s6DlP7cT" target="_blank" rel="noopener noreferrer">
+
                 {" "}
-                <IoLogoYoutube className="w-8 h-8 ml-6" />
+                <FaWhatsapp className="w-8 h-8 ml-6" />
               </a>
             </div>
 
@@ -210,7 +210,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://wa.me/+17785352979"
+                href="https://wa.me/+12504666179"
                 className="px-4 py-2 bg-teal-400 hover:bg-teal-600 rounded text-teal-900 font-bold"
               >
                 Donate
@@ -221,11 +221,11 @@ const Footer = () => {
         </div>
 
         <div className=" mt-6 pt-6  border-t">
-          <div class="text-center pt-[5px]">
+          <div className="text-center pt-[5px]">
             <p className="">
               &copy; {currentYear}, All Rights Reserved.
               <br />
-              <p className="font-bold text-lg">Resurrection Miracle Center Church</p>
+              <span className="font-bold text-lg">Resurrection Miracle Center Church</span>
             </p>
             <p>
               <a

@@ -4,16 +4,15 @@ import Statements from "../components/Statements";
 import ImagesDescriptions from "../components/img&Desc/ImagesDescriptions";
 import HistoryImages from "../components/UI/HistoryImages/HistoryImages";
 
-const pastorsImages = [
-  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC1.png?alt=media&token=675f80d8-cdd6-4654-b83d-8b23cf9f4ccb",
-  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC2.png?alt=media&token=ecdb7f0f-51a5-4c54-9edb-019cd7908f31",
-  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC3.png?alt=media&token=6852698c-8750-4b0f-a479-11426c23f65f",
-  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC4.png?alt=media&token=91c3f903-b00a-4e16-add7-fc47e5fb41af",
-];
+// const pastorsImages = [
+//   "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC1.png?alt=media&token=675f80d8-cdd6-4654-b83d-8b23cf9f4ccb",
+//  ,
+//   "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC3.png?alt=media&token=6852698c-8750-4b0f-a479-11426c23f65f",
+//   "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC4.png?alt=media&token=91c3f903-b00a-4e16-add7-fc47e5fb41af",
+// ];
 
 const img =
-  "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC4.png?alt=media&token=91c3f903-b00a-4e16-add7-fc47e5fb41af";
-
+ "https://firebasestorage.googleapis.com/v0/b/rmcc-entebee.appspot.com/o/aboutUs%2FpastorsRMCC2.png?alt=media&token=ecdb7f0f-51a5-4c54-9edb-019cd7908f31";
 const AboutUs = () => {
   return (
     <>
@@ -54,7 +53,7 @@ const AboutUs = () => {
         descTextColor="text-teal-900"
         subTitleTextColor="text-teal-800 "
         title={"Our Pastors"}
-        images={pastorsImages}
+        // images={pastorsImages}
         img={img}
         desc="Geoffrey and Babrah are passionate about serving the body of
 Christ and carrying on the great commission. They realized
