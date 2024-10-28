@@ -14,7 +14,6 @@ const ContactUs = () => {
   const [newsletter, setNewsletter] = useState(false);
 
   const form = useRef();
-
   // Enviar el formulario a través de EmailJS
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,32 +27,14 @@ const ContactUs = () => {
         : "No newsletter subscription.", // Newsletter
     };
 
-
-
-    const isProduction = process.env.NODE_ENV === 'production';
-
-const config = isProduction
-  ? {
-      serviceId: process.env.FIREBASE_SERVICE_ID, // De Firebase config
-      templateId: process.env.FIREBASE_TEMPLATE_ID,
-      userId: process.env.FIREBASE_USER_ID,
-    }
-  : {
-      serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, // De .env
-      templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      userId: process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
-    };
-
     emailjs
-    
-      .send(config.serviceId, config.templateId, formData, config.userId)
 
-      // .send(
-      //   process.env.EMAILJS_SERVICE_ID,
-      //   process.env.EMAILJS_TEMPLATE_ID,
-      //   formData,
-      //   process.env.EMAILJS_USER_ID
-      // )
+    .send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      formData,
+      process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+    )
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
@@ -75,7 +56,53 @@ const config = isProduction
       );
   };
 
-    return (
+
+//We need to change the plan in firebase to blaze
+  // const sendEmail = async (e) => {
+  //   e.preventDefault();
+  
+  //   const formData = {
+  //     from_name: `${firstName} ${lastName}`, // Nombre completo
+  //     email: email, // Dirección de email
+  //     message: message, // Mensaje
+  //     newsletter: newsletter
+  //       ? "They have subscribed to the newsletter."
+  //       : "No newsletter subscription.", // Newsletter
+  //   };
+  
+  //   try {
+  //     const response = await fetch('/api/sendEmail', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+  
+  //     if (response.ok) {
+  //       const result = await response.json();
+  //       console.log("SUCCESS!", result);
+  //       // Mostrar un alert de éxito
+  //       alert("We received your message, we will get back to you soon, God bless you!");
+  
+  //       // Limpiar el formulario
+  //       setFirstName("");
+  //       setLastName("");
+  //       setEmail("");
+  //       setMessage("");
+  //       setNewsletter(false);
+  //     } else {
+  //       throw new Error("Failed to send email.");
+  //     }
+  //   } catch (error) {
+  //     console.error("FAILED...", error);
+  //     alert("There was an error sending your message. Please try again later.");
+  //   }
+  // };
+  
+
+
+  return (
     <>
       <section
         id="contact-form"
@@ -221,6 +248,49 @@ const config = isProduction
 };
 
 export default ContactUs;
+
+
+  // Enviar el formulario a través de EmailJS
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   const formData = {
+  //     from_name: `${firstName} ${lastName}`, // Nombre completo
+  //     email: email, // Dirección de email
+  //     message: message, // Mensaje
+  //     newsletter: newsletter
+  //       ? "They have subscribed to the newsletter."
+  //       : "No newsletter subscription.", // Newsletter
+  //   };
+
+  //   emailjs
+
+  //     .send(
+  //       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+  //       process.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+  //       formData,
+  //       process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log("SUCCESS!", result.text);
+  //         // Mostrar un alert de éxito
+  //         alert(
+  //           "We received your message, we will get back to you soon, God bless you!"
+  //         );
+
+  //         // Limpiar el formulario
+  //         setFirstName("");
+  //         setLastName("");
+  //         setEmail("");
+  //         setMessage("");
+  //         setNewsletter(false);
+  //       },
+  //       (error) => {
+  //         console.log("FAILED...", error.text);
+  //       }
+  //     );
+  // };
 
 
 
