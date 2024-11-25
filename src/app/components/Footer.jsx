@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { FaHandHoldingHeart, FaLocationDot } from "react-icons/fa6";
 import { BsMailbox2Flag } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
@@ -195,9 +195,9 @@ const Footer = () => {
               >
                 <FaFacebook className="w-8 h-8 " />
               </a>
-              <a href="">
+              <a href="https://youtube.com/@resurrectionmiracleministriesi?si=JqLFzM8eJ9qVCUXi" target="_blank" rel="noopener noreferrer">
                 {" "}
-                <FaTiktok className="w-8 h-8 ml-6" />
+                <FaYoutube className="w-8 h-8 ml-6" />
               </a>
               <a href="https://chat.whatsapp.com/GlglUcLCvrm4F2s6DlP7cT" target="_blank" rel="noopener noreferrer">
 
